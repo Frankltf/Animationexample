@@ -89,6 +89,21 @@
                                             <action selector="suofang:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PtU-Tw-lHx"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsr-gp-zde">
+                                        <rect key="frame" x="107" y="50" width="31" height="30"/>
+                                        <state key="normal" title="顺序"/>
+                                        <connections>
+                                            <action selector="shunxu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KES-px-ZQD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zie-fs-2KJ">
+                                        <rect key="frame" x="168" y="53" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="同步"/>
+                                        <connections>
+                                            <action selector="tongbu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ofp-tm-ZWC"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.79447572330000005" green="0.82926837050000002" blue="0.83336049079999996" alpha="0.55091879399999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -109,6 +124,8 @@
                                     <constraint firstItem="xgP-JZ-ZRc" firstAttribute="top" secondItem="hx2-s4-xHW" secondAttribute="top" constant="15" id="eRJ-rx-CVt"/>
                                     <constraint firstItem="pZI-34-2NX" firstAttribute="leading" secondItem="hx2-s4-xHW" secondAttribute="leading" constant="15" id="g09-ch-ER0"/>
                                     <constraint firstAttribute="height" constant="100" id="uBD-FV-PIO"/>
+                                    <constraint firstItem="Bsr-gp-zde" firstAttribute="leading" secondItem="eWQ-7K-9Hx" secondAttribute="trailing" constant="15" id="zCS-sv-jkz"/>
+                                    <constraint firstItem="Bsr-gp-zde" firstAttribute="top" secondItem="xgP-JZ-ZRc" secondAttribute="bottom" constant="5" id="zZ0-9R-ntP"/>
                                 </constraints>
                             </view>
                         </subviews>
