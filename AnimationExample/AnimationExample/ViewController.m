@@ -11,14 +11,18 @@
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 @interface ViewController ()<CAAnimationDelegate>
 @property (weak, nonatomic) IBOutlet UIView *animationview;
+@property(nonatomic,assign)NSInteger index;
+@property (weak, nonatomic) IBOutlet UILabel *text;
 
 @end
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    self.index=0;
 }
 
 
@@ -158,6 +162,32 @@
     groupanimation.animations=[NSArray arrayWithObjects:anima1,anima2,anima3, nil];
     groupanimation.duration=4;
     [self.animationview.layer addAnimation:groupanimation forKey:@"groupAnimation"];
+}
+- (IBAction)fade:(UIButton *)sender {
+    [self changeview];
+    CATransition *anima=[CATransition animation];
+    anima.type=kCATransitionFade;
+    anima.duration=1.5;
+    [self.view.layer addAnimation:anima forKey:@"fadeAbunatuib"];
+}
+-(void)changeview
+{
+    NSArray *colors=[NSArray arrayWithObjects:[UIColor cyanColor],[UIColor magentaColor],[UIColor orangeColor], nil];
+    NSArray *titles=[NSArray arrayWithObjects:@"1",@"2",@"3",@"4", nil];
+    self.animationview.backgroundColor=[colors objectAtIndex:self.index];
+    self.text.text=[titles objectAtIndex:self.index];
+    self.index++;
+    
+    
+
+}
+- (IBAction)movein:(UIButton *)sender {
+}
+- (IBAction)push:(UIButton *)sender {
+}
+- (IBAction)reveal:(UIButton *)sender {
+}
+- (IBAction)cube:(UIButton *)sender {
 }
 
 
