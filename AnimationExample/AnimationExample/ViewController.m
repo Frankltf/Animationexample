@@ -177,9 +177,6 @@
     self.animationview.backgroundColor=[colors objectAtIndex:self.index];
     self.text.text=[titles objectAtIndex:self.index];
     self.index++;
-    
-    
-
 }
 - (IBAction)movein:(UIButton *)sender {
 }
